@@ -1,5 +1,103 @@
-@import url('refinery/application.css');
+
 /*  
   Override default refinery application CSS below. 
   Formatting applies to all frontend.
 */
+body {
+	font-size: 90%;
+	background-image: url(../images/main/tile.gif);
+	font-family: Arial;
+}
+#wrapper{
+	width:853px;
+	/*margin-left:auto;*/
+	margin-right:auto;
+	position: relative;
+}
+#logo{
+	background-image: url(../images/main/logo.gif);
+	background-repeat: no-repeat;
+	height: 232px;
+	width: 294px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 20;
+}
+#header{
+	background-image: url(../images/main/programming_for_the_fun_of_it.gif);
+	background-repeat: no-repeat;
+	height: 43px;
+	width: 520px;
+	position: absolute;
+	left: 300px;
+	top: 40px;
+}
+#contentwrapper{
+	background-image: url(../images/main/edge.gif);
+	background-repeat: repeat-y;
+	width: 659px;
+	position: absolute;
+	left: 172px;
+	top: 115px;
+}
+#top{
+	background-image: url(../images/main/top.gif);
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 659px;
+}
+#footer{
+	background-image: url(../images/main/bottom.gif);
+	background-repeat: no-repeat;
+	height: 31px;
+	width: 659px;
+}
+#content{
+	margin-top: 75px;
+	width: 580px;
+	margin-left: 65px;
+	font-family: Helvetica;
+	font-size: .95em;
+}
+#announce{
+	font-size: 1.4em;
+	color: #A6252A;
+	width: 510px;
+	margin-top: 20px;
+	margin-left: 130px;
+	font-family: Arial;
+}
+#topmenu{
+	position: absolute;
+	left: 302px;
+	top: 90px;
+	font-size: 1.1em;
+}
+#topmenu a:link, #topmenu a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+#topmenu a:hover, #topmenu a:active {
+	color: #E0922F;
+	text-decoration: underline;
+}
+#leftmenu{
+	position: absolute;
+	z-index: 30;
+	left: 30px;
+	top: 250px;
+	width: 140px;
+	font-size: 1.1em;
+	text-align: right;
+}
+#leftmenu a:link, #leftmenu a:visited {
+	color: #000000;
+	text-decoration: underline;
+	display: block;
+	margin-top: 6px;
+}
+#leftmenu a:hover, #leftmenu a:active {
+	color: #E0922F;
+}
+

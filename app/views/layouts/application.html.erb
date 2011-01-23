@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Ruby for kids</title>
+    <script language="javascript" src="/ruby4kids/javascripts/swfobject.js"></script> 
+    <%= stylesheet_link_tag "application", :media => "all" %>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="logo"></div>
+      <div id="header"></div>
+      <!--top menu -->
+      <div id="topmenu"><a href="/ruby4kids/public/web_page/1">Home</a> | 
+
+        <a href="/ruby4kids/public/web_page/2">Tutorial</a>  | 
+        <a href="/ruby4kids/public/web_page/4">Download</a>  | 
+        <a href="/ruby4kids/public/web_page/14">Screencasts</a> | 
+        <a href="http://blog.ruby4kids.com/">Blog</a> | 
+        <a href="/ruby4kids/public/web_page/6">Contact Us</a>
+
+      </div>
+      <!--left menu -->
+      <div id="leftmenu">
+        <strong>Ruby Links</strong>    
+        <br>
+        <a href="http://www.ruby-lang.org/en/">Ruby</a>
+
+        <a href="http://www.pragprog.com/titles/ltp2/learn-to-program">Book: Learn to Program</a>  
+        <a href="http://teachingkids.railsbridge.org/">Railsbridge: Teaching Kids</a>
+        <br>
+
+        <strong>Gosu</strong>
+        <a href="http://code.google.com/p/gosu/wiki/RubyTutorial">Introduction</a>
+        <a href="http://code.google.com/p/gosu/wiki/RubyReference">Reference Commands</a>
+
+        <br>
+
+        <strong>Supporting Items</strong>
+        <a href="/ruby4kids/public/web_pages/8">Git and github</a>
+
+
+      </div>
+      <!--left menu end -->
+      <div id="contentwrapper">
+        <div id="top"></div>
+
+        <div id="content">  
+          <%= yield %>
+        </div>
+
+        <div id="footer"></div>
+      </div>
+
+    </div>
+
+
+
+    <link type="text/css" rel="stylesheet" href="/ruby4kids/stylesheets/SyntaxHighlighter.css"></link>
+    <script language="javascript" src="/ruby4kids/javascripts/SyntaxHighlighter/shCore.js"></script>
+    <script language="javascript" src="/ruby4kids/javascripts/SyntaxHighlighter/shBrushRuby.js"></script>
+    <script language="javascript" src="/ruby4kids/javascripts/SyntaxHighlighter/shBrushXml.js"></script>
+    <script language="javascript">
+      dp.SyntaxHighlighter.HighlightAll('code');
+    </script>
+
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-20908783-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+    </script>
+
+  </body>
+</html>
+
+
+
